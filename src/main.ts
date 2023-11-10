@@ -1,4 +1,4 @@
-import { ErrorMapper } from "utils/ErrorMapper";
+import {ErrorMapper} from "utils/ErrorMapper";
 
 declare global {
   /*
@@ -13,6 +13,8 @@ declare global {
   interface Memory {
     uuid: number;
     log: any;
+    spawnTask: {[rooms: string]: SpawnTask};
+    spawnTimer: {[rooms: string]: SpawnTimer};
   }
 
   interface CreepMemory {
