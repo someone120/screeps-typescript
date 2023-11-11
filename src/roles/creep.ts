@@ -1,0 +1,3 @@
+interface CreepInterface{
+  work:()=>void
+}

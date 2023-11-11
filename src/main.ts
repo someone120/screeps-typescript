@@ -21,6 +21,12 @@ declare global {
     role: string;
     room: string;
     working: boolean;
+    path: {path: string, index: number};
+    source: Id<Source> | undefined;
+  }
+
+  interface RoomMemory {
+    sourceRemain: Id<Source>[];
   }
 
   // Syntax for adding proprties to `global` (ex "global.log")
